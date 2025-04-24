@@ -22,3 +22,18 @@ main:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     background: linear-gradient(135deg, #feb47b, #ff7e5f, );
 }
+.merkezi {
+    /* CLASS İÇİN BAŞINA NOKTA. */
+    width: 467px;
+    margin:auto;
+    background-color: #0f0fbb
+}
+.mycontainer {
+    width: 100%;
+    overflow: auto;
+}
+.mycontainer div{
+    width: 33%;
+    float: left;
+    color: rgb(155, 17, 40)
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- padding, space between border, border collapse, merging borders, border, border. -->
+    <!-- also: padding-top/bottom/left/right --> 
+    <!-- spacing, space between each cell-->
+    <style>
+        table, th, td {
+            border:3px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+            color: yellow;
+        }
+        ul,ol,dl {
+            text-align: left;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTek25 Lab</title>
+   <!-- Favicon --> <link rel="icon" type="image/oyes" href="/image/oyes.ico">
+</head>
+<body>
+    <header>
+        <a href="nisan10.html" target="_blank">
+        <img src="https://tetr.io/res/emotes/vno.png" title="Önceki hafta için bu resme tıkla!" class="prev" alt="garbo">
+        </a>
+        <h1 style="background-color:rgb(0,0,0); text-align: center; color: white;">Welcome to WebTek25 Lab (24 Nisan)</h1>
+    </header>
+
+    <main style="text-align: center";> <!-- Newer ones are on top(mostly)-->
+      <div class="mycontainer">
+        <div style="background-color: blueviolet;">
+          <h2>London</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac elit ut lorem lacinia dictum vitae a eros. Curabitur mattis ac justo eu ultrices. 
+        Aenean molestie porttitor fermentum. Cras placerat, elit eu molestie blandit, odio massa hendrerit justo, ut dapibus.</p>
+        </div>
+        <div style="background-color: aliceblue;">
+          <h2>Oslo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac elit ut lorem lacinia dictum vitae a eros. Curabitur mattis ac justo eu ultrices. 
+        Aenean molestie porttitor fermentum. Cras placerat, elit eu molestie blandit, odio massa hendrerit justo, ut dapibus.</p>
+        </div>
+        <div style="background-color: aqua;">
+          <h2>Istanbul</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac elit ut lorem lacinia dictum vitae a eros. Curabitur mattis ac justo eu ultrices. 
+          Aenean molestie porttitor fermentum. Cras placerat, elit eu molestie blandit, odio massa hendrerit justo, ut dapibus.</p>
+       </div>
+      </div>
+      <hr>
+      <!--Block-level Elementler, alt satıra geçer.-->
+       <p style ="border: 1px solid black; text-align: left;"> Yalan Dünya</p>
+       <div style ="border: 1px solid black; text-align: left;"> Yalan Dünya</div>
+       <!-- Inline Elementler, yeni satırda başlamaz-->
+        <p>mesela bak böle iken <span style ="border: 1px solid black;">hop hop hop zıp zıp zıp</span>  inmiyor hiç bir yere, span yatay </p>
+        <!-- div komudu , bir grubu tek kutu içine alır.-->
+        <div class="merkezi">
+          <h2>London</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac elit ut lorem lacinia dictum vitae a eros. Curabitur mattis ac justo eu ultrices. 
+          Aenean molestie porttitor fermentum. Cras placerat, elit eu molestie blandit, odio massa hendrerit justo, ut dapibus.</p>
+         </div>
+       <hr>
+        <!-- Lists, Unordered list -->
+         <ul>
+            <li>sayı yok</li>
+            <li>sadece rakam</li>
+            <li>unordered list.</li>
+            <li>doldur paşa</li>
+         </ul>
+         <!-- Ordered List -->
+         <ol>
+            <li>Sayı ile sıralama</li>
+            <li>Yerine göre ikisi de kullanılır.</li>
+            <li>ordered list.</li>
+            <li>doldur PAŞAAAA</li>
+         </ol>
+         <!-- Description List, dt is the main entry, dd explains it. --> 
+          <dl>
+            <dt>1. Fehmi Atalar</dt>
+            <dd>- iyi adamdır severiz.</dd>
+            <dt>2. Hüseyin Savran</dt>
+            <dd>- iyi hocadır severiz.</dd>
+          </dl>
+        <hr>
+        <!-- Table, Border settings are up there. 
+         colspan : x columns will take for one data
+         rowspan : x rows will take for one data 
+         tr:nth-child(even) { / horizontal zebra line ([t]able [r]ow:nth-child)
+         td:nth-child(even), th:nth-child(even) { / vertical zebra line.
+         we need to have headers for it too se we also th([t]able [h]eader):
+        -->
+        <table style="width : 100%">
+            <colgroup>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: green;">
+            <col span="2" style="background-color: blue;">
+            </colgroup>
+            <tr>
+              <th colspan="2">İsim Soyisim</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+            </tr>
+            <tr>
+              <td>Fehmi</td>
+              <td>Atalar</td>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+            </tr>
+            <tr>
+              <td>KİŞİ2</td>
+              <td>Kişi 2 soyisim</td>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+              <th>doldurmalık</th>
+
+            </tr>
+          </table>
+          <hr>
+        <h1 style="color: aqua;">Başlık birinci sayısı.</h1>
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: 175%;">Denemece yanılmaca.</p>
+        <hr>
+        <h2>Başlık ikinci sayısı.</h2>
+        <p style="color: black; font-size: x-large;"><b>Oturmaca çalışmaca.</b></p>
+        <p style="font-size: 140%;">Eklemeli İkinci Yazı.<b> Main'de center align komudu olduğundan hepsi center'a alignlı.</b></p>
+        <p style="text-align: end;"><em>Ancak</em> <mark>paragrafın(p'nin) stilinde</mark> herhangi bir text-align komudu varsa <strong>onu atıyor.</strong><br>
+            br kullanarak p içinde aşağı yazmak <del style="color: black;">da</del> <b>mümkün</b>. Bunun yerine aşağıdaki gibi <b>pre kullanılabilir</b>. <b>Bu işleri otomatik yapıyor</b>.
+        </p>
+        <p style="text-align: start;">mesela <sup>yani</sup></p>
+        <hr>
+        <pre style="font-size: 105%; text-align: center";>
+        Başım köpük köpük bulut
+        İçim dışım deniz
+        Ben bir ceviz ağacıyım
+        Gülhane Parkı'nda
+        </pre>
+        <hr>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <hr>
+        <br>
+        <address style="text-align: left;">
+            Written by Fehmi Atalar.<br>
+            Visit us at:<br>
+            <a href="mailto:fehmiatalar9@hotmail.com" title="fehmiatalar9@hotmail.com">bu mailden ulaş</a><br>
+            Yalova<br>
+            Türkiye
+            </address>
+            <!-- OH BE YORUMU KEŞFETTİM -->
+            <!-- BURASI SİTEDE ÇIKMAZ, ÇÜNKÜ YORUM BU-->
+             <a href="https://youtube.com" target="_blank">Youtube bura mı harbi? "a href" kullanarak linkleyebilyorsun, _blank ile de yeni sayfada açtırıyorsun.</a>
+        <hr>
+        <a href="https://www.youtube.com/watch?v=Lh9GyV8j-48" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbw4pdWWVbjzTKd2HwgxhRuaNQisevf_evTg&s" title="Rastgele Barış Manço?" alt="şaşıran adam">
+        </a>
+    </main>
+
+    <footer>
+        <p style="text-align: center; font-size: 250%;">&copy; 2025 WebTek25 Lab</p>
+    </footer>
+
+</body>
+</html>
